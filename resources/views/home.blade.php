@@ -63,11 +63,17 @@
         <div class="max-width">
             <div class="stock-value">
                 <p class="dashboard-title">Valor do Estoque</p>
-                <h1>R$ 1.098.489,97</h1>
+                <h1>R$ {{number_format($total_stock_value, '2', ',', '.')}}</h1>
                 <button class="dashboard-button"><i class="fa fa-plus" style="padding-right: 5px;"></i>Compra</button>
                 <button class="dashboard-button"><i class="fa fa-plus" style="padding-right: 5px;"></i>Venda</button>
             </div>
-            <div class="plans">b</div>
+            <div class="plans">
+                <p class="dashboard-title">Total de Vendas</p>
+                <h1>R$ {{number_format($entries, '2', ',', '.')}}</h1>
+
+                <p class="dashboard-title">Total de Compras</p>
+                <h1>R$ {{number_format($exits, '2', ',', '.')}}</h1>
+            </div>
 
             <div class="general">c</div>
             <div class="transactions-historical">d</div>
