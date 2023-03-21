@@ -131,6 +131,10 @@ p.dashboard-title{
     margin-bottom: 10px;
 }
 
+#dashboard-overview div div.plans p:nth-child(3){
+    margin-top: 20px;
+}
+
 div.stock-value h1{
     letter-spacing: -1.5px;
     margin-bottom: 20px;

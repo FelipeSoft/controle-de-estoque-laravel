@@ -29,7 +29,8 @@ class HomeController extends Controller
             $exits += $ext['quantity'] * $ext->product['price'];
         }
 
+        $current_stock = $entries - $exits;
 
-        return view('home', ['total_stock_value' => $total, 'entries' => $entries, 'exits' => $exits]);
+        return view('home', ['total_stock_value' => $current_stock, 'entries' => $entries, 'exits' => $exits]);
     }
 }
