@@ -148,3 +148,52 @@ button.dashboard-button{
     border: none;
     margin-right: 10px;
 }
+
+/* forms */
+
+div.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.container-form form{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 30%;
+    padding: 40px;
+}
+div.container-form form h3{
+    text-align: center;
+}
+div.container-form form label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    margin-left: 22px;
+}
+
+div.container-form form input{
+    padding: 11px 22px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--dark);
+    outline: 0;
+}
+
+div.container-form form button{
+    padding: 11px 22px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    margin-top: 22px;
+}
+
+p.error-message{
+    color: #f00;
+}
